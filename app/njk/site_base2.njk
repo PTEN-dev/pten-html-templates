@@ -1,0 +1,90 @@
+<!-- layout.nunjucks -->
+{% set baseUrl = "../.." %}
+
+<!doctype html>
+<html lang="en">
+{% set url = baseUrl %}
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="{{ baseUrl }}/app/dist/images/logo.png" type="image/png" sizes="16x16">
+
+  <title>PTEN</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+  <!-- Hubtel core CSS -->
+  <link href="{{ baseUrl }}/app/dist/styles/main.css" rel="stylesheet">
+
+  {% block stylesheet %}{% endblock %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="{{ baseUrl }}/app/dist/scripts/jquery.js"><\/script>')
+  </script>
+
+</head>
+
+<body>
+  <!-- Sidenav -->
+  <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="scrollbar-inner">
+      <!-- Brand -->
+      <div class="sidenav-header  align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="{{ baseUrl }}/app/dist/images/logo.png" class="navbar-brand-img" alt="...">
+        </a>
+      </div>
+      <div class="navbar-inner">
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Nav items -->
+          <ul class="navbar-nav">
+            {% block nav %}
+
+            {% endblock %}
+
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ./ Sidebar -->
+
+
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    {% set activeNav = topNav %}
+    {% include "templates/partials/_dashboard_nav.njk" %}
+
+
+
+
+
+
+
+
+    <div class="">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
+
+
+  </div>
+
+
+  {% include "templates/partials/_foot.njk" %}
+
+  {% block scripts %}{% endblock %}
+</body>
+
+</html>

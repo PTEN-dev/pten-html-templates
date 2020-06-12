@@ -1,0 +1,104 @@
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+$objectConfig: 0,
+contain,
+cover,
+fill,
+scale-down;
+
+@each $tuple in $objectConfig {
+    .object-fit-#{($tuple)} {
+        object-fit: $tuple;
+    }
+}
+
+
+@for $i from 1 through 500 {
+    .vh-height-#{$i} {
+
+      height: calc(100vh - #{$i}px);
+    }
+  }
+
+
+
+
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
+@each $tuple in $bagdeConfig {
+    .top-#{($tuple)} {
+        top: $tuple !important;
+    }
+}
+
+
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
+@each $tuple in $bagdeConfig {
+    .bottom-#{($tuple)} {
+        bottom: $tuple !important;
+    }
+}
+
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
+@each $tuple in $bagdeConfig {
+    .left-#{($tuple)} {
+        left: $tuple !important;
+    }
+}
+
+$bagdeConfig: 0,
+5,
+10,
+15,
+20;
+
+@each $tuple in $bagdeConfig {
+    .right-#{($tuple)} {
+        right: $tuple !important;
+    }
+}
+
+
+
+//custom scroll styling
+#scroll {
+    &::-webkit-scrollbar-track {
+        // -webkit-box-shadow: inset 0 0 6px #dee2e6;
+        border-radius: 6px;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        margin: 50px 0;
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        // -webkit-box-shadow: inset 0 0 6px #dee2e6;
+        background-color: #acaeaf;
+    }
+}

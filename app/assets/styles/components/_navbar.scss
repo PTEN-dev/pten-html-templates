@@ -1,0 +1,36 @@
+nav {
+
+    background: #1b2640;
+    height: 95px;
+
+
+    .navbar-nav {
+
+        .nav-item {
+
+            &.active{
+
+
+                .nav-link {
+                    color: rgb(255, 255, 255);
+                }
+
+
+            }
+
+
+            .nav-link {
+                color: #AFBBF2;
+
+
+                @media (min-width: 992px) {
+                    padding-right: 1.5rem;
+                    padding-left: 2.5rem;
+                }
+
+            }
+        }
+    }
+
+
+}

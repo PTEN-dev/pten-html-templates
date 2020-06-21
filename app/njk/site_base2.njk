@@ -83,8 +83,14 @@
 
 
   <!-- {% include "templates/partials/_foot.njk" %} -->
+  <script src="{{ baseUrl }}/app/dist/scripts/main.js"></script>
+
 
   {% block scripts %}{% endblock %}
+
+  <script>
+    $('.collapse').collapse();
+  </script>
 </body>
 
 </html>

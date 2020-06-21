@@ -3,7 +3,8 @@
     "main.js": {
       "files": [
         "scripts/utilities.js",
-        "scripts/main.js"
+        "scripts/main.js",
+        "scripts/bootstrap.min.js"
       ],
       "main": true
     },

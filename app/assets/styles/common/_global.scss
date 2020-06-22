@@ -5,6 +5,14 @@ body {
 	font-family: 'Poppins', sans-serif;
 }
 
+
+html *::selection {
+	background: #a8d1ff;
+  }
+  html *::-moz-selection {
+	background: #a8d1ff;
+  }
+
 .header.form {
 	height: 100%;
 	display: flex;
@@ -27,8 +35,6 @@ body {
 	@media (max-width: 576px) {
 		padding: 0 22px;
 	}
-
-
 
 
 

@@ -24,9 +24,9 @@ scale-down;
 @for $i from 1 through 500 {
     .vh-height-#{$i} {
 
-      height: calc(100vh - #{$i}px);
+        height: calc(100vh - #{$i}px);
     }
-  }
+}
 
 
 
@@ -108,8 +108,13 @@ a {
     color: #454ade;
 }
 
-.breadcrumb{
+.breadcrumb {
     padding: 2.75rem 1rem;
     margin-bottom: 0;
     background-color: #ffffff;
+}
+
+
+.font-weight-semi-bold {
+    font-weight: 600 !important;
 }

@@ -1,0 +1,28 @@
+{% macro active(activePage='') %}
+
+<li class="{%if activePage == 'about' %} active {% endif %}">
+    <a class="" href="">ABOUT US</a>
+</li>
+<li class="{%if activePage == 'how' %} active {% endif %}">
+    <a class="" href="how.html">HOW IT WORKS</a>
+</li>
+<li class="{%if activePage == 'why' %} active {% endif %}">
+    <a class="" href="why.html">WHY WORK WITH US</a>
+</li>
+<li class="{%if activePage == 'product' %} active {% endif %}">
+    <a class="" href="product.html">PRODUCTS</a>
+</li>
+<li class="{%if activePage == 'contact' %} active {% endif %}">
+    <a class="" href="contact.html">CONTACT US</a>
+</li>
+
+<li class="p-4 mt-4">
+    <h6 class="font-weight-bold">How can we help you?</h6>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+
+    <a href="contact.html" class="btn d-inline-block btn-primary mt-3"> CONTACT US <i
+            class="fas ml-1 fa-phone-square"></i></a>
+</li>
+
+
+{% endmacro %}

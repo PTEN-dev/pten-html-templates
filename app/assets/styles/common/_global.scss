@@ -124,9 +124,80 @@ body {
 
 }
 
-footer {
-	position: fixed;
-	bottom: 10px;
-	left: 15x;
+footer.web {
+	// position: fixed;
+	// bottom: 10px;
+	// left: 15x;
 
+	padding-top: 70px;
+	background: #1b2640;
+	color: white;
+
+	h5 {
+		font-weight: 600;
+	}
+
+	ul {
+
+		li {
+
+			padding: 10px 0px;
+
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
+	}
+
+
+	.copyright {
+		background-color: #0F132F;
+		color: white;
+		text-align: center;
+		padding: 35px 0;
+		margin-top: 62px;
+		border-top: 1px solid #303030;
+	}
+
+}
+
+.side-menu {
+
+	ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			margin-bottom: 5px;
+			background: #f8f8f8;
+			position: relative;
+
+			&.active {
+
+				&::before {
+					content: "";
+					height: 100%;
+					width: 10px;
+					position: absolute;
+					top: 0;
+					left: 1;
+					background: #454ade;
+				}
+
+			}
+
+
+
+
+			a {
+				display: block;
+				background: #F8F8F8;
+				padding: 25px 22px;
+				color: black;
+				font-weight: 600;
+				text-decoration: none;
+			}
+		}
+	}
 }

@@ -329,6 +329,13 @@ $cards-per-line: (
   height: 45px;
   margin-bottom: 26px;
 
+  &.d-inline-block {
+    &::after {
+      content: '';
+      margin: 0 auto;
+    }
+  }
+
   &::after {
     content: '';
     height: 5px;
@@ -434,7 +441,7 @@ ol.how {
 }
 
 .whatpeoplesay .content {
-  border: 2px solid #c19613;
+  border: 2px solid #454ade;
   padding: 17px 22px;
   margin-left: 84px;
 

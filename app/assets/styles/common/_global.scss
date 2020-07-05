@@ -162,7 +162,7 @@ footer.web {
         &::before {
           content: '';
           height: 100%;
-          width: 10px;
+          width: 3px;
           position: absolute;
           top: 0;
           left: 1;
@@ -177,6 +177,7 @@ footer.web {
         color: black;
         font-weight: 600;
         text-decoration: none;
+        font-size: 14px;
       }
     }
   }
@@ -318,7 +319,7 @@ $cards-per-line: (
 
 @media (min-width: 1700px) {
   .card-group .card {
-    flex: 0 0 calc(16.66333% - 10px) !important;
+    flex: 0 0 calc(24.66333% - 10px) !important;
   }
 }
 
@@ -338,10 +339,10 @@ $cards-per-line: (
 
   &::after {
     content: '';
-    height: 5px;
+    height: 3px;
     width: 75px;
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     right: 0;
     left: 0;
     z-index: 0;

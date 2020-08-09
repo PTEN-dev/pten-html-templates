@@ -16,3 +16,14 @@
 
     }
 }
+
+.btn {
+    border-radius: 5px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    padding: 11px 22px !important; 
+
+    &:focus {
+        box-shadow: none;
+    }
+}

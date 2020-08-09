@@ -1,0 +1,259 @@
+<!-- website.nunjucks -->
+{% set title='Products' %}
+{% set topNav = 'cart' %}
+{% extends "site_base.njk" %}
+
+
+{% block stylesheet %}
+
+
+{% endblock %}
+
+
+
+
+
+
+
+{% block content %}
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="product.html">Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ol>
+    </nav>
+
+    <div>
+        <div class="row">
+            <div class="col-lg-3 col-xl-3 d-none d-lg-block">
+                <div class="side-menu">
+                    <ul class="product">
+
+                        {% import 'templates/links/product_side_nav.njk' as sidebar %}
+                        {{ sidebar.active( 'product' ) }}
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-9 col-xl-9">
+                <div>
+                    <div>
+
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                  <tr style="border-bottom: 1px solid grey;">
+                                    <th scope="col" class="font-weight-semi-bold">Product</th>
+                                    <th scope="col" class="font-weight-semi-bold">Price</th>
+                                    <th scope="col" class="font-weight-semi-bold text-right">Quantity</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="border-bottom-muted">
+                                    <td valign="middle">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid mr-3"
+                                                width="50" />
+                                            </div>
+                                            <h6 class="text-truncate w-75">Perfumed Body Mist</h6>
+                                        </div>
+                                    </td>
+                                    <td valign="middle">
+                                        <div class="d-flex align-items-center mt-2 pt-1">
+                                            GHS 23.00
+
+                                        </div>
+                                    </td>
+                                    <td valign="middle">
+                                        <div class="d-flex align-items-center justify-content-end"> 
+                                            <div class="quantity mr-3">
+                                                <input type="number" min="1" max="100" step="1" value="1">
+                                              </div>
+                                              <i class="fas fa-trash-alt pointer"></i>
+
+                                        </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="border-bottom-muted">
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid mr-3"
+                                                width="50" />
+                                            </div>
+                                            <h6 class="text-truncate w-75">Perfumed Body Mist</h6>
+                                        </div>
+                                    </td>
+                                    <td valign="middle"> <div class="d-flex align-items-center mt-2 pt-1">
+                                        GHS 23.00
+
+                                    </div></td>
+                                    <td>
+                                        <div class="d-flex align-items-center justify-content-end"> 
+                                            <div class="quantity mr-3">
+                                                <input type="number" min="1" max="100" step="1" value="1">
+                                              </div>
+                                              <i class="fas fa-trash-alt pointer"></i>
+
+                                        </div>
+                                    </td>
+                                  </tr>
+                                 
+                                 
+                                </tbody>
+                              </table>
+                          
+                        </div>
+
+
+                        <div class="row justify-content-end mt-5">
+                            <div class="col-12 col-md-6">
+                                <div class="bg-light p-4">
+        
+                                    <div class="row">
+                                        <div class="col-3">
+                                           <h6 class="font-weight-semi-bold">Delivery: </h6> 
+        
+                                        </div>
+                                        <div class="col-9 text-right">
+                                            <h6 class="text-right">GHS 23.00 </h6> 
+
+                                            <a href="#">Select location</a>
+                                        </div>
+                                        <div class="col-3 mt-4">
+                                            <h6 class="font-weight-semi-bold">Subtotal: </h6> 
+         
+                                         </div>
+                                         <div class="col-9 mt-4">
+                                            <h6 class="text-right">GHS 23.00 </h6> 
+                                         </div>
+                                         <div class="col-3 mt-4">
+                                            <h6 class="font-weight-semi-bold">Total: </h6> 
+         
+                                         </div>
+                                         <div class="col-9 mt-4">
+                                            <h6 class="text-right font-weight-semi-bold">GHS 23.00 </h6> 
+                                         </div>
+        
+                                    </div>
+        
+                                </div>
+
+                            </div>
+
+                            <div class="col-12">
+                                <div class="text-right mt-4">
+                                    <a href="#" class="btn d-inline-block btn-primary"> Checkout</i></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-5 pt-5 mb-5 pb-5">
+                            <h4 class="title">Poeple also liked</h4>
+
+                            <div class="card-group items ">
+                                <div class="card item border-0">
+                                   
+    
+                                    <a href="item-details.html" class="item-add">
+                                        <div class="btn">
+                                            View
+                                        </div>
+    
+                                        <div class="text-center img-holder p-2">
+                                            <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                                width="" />
+                                        </div>
+    
+                                        <div class="item-text px-3 text-center pt-2 pb-3">
+    
+    
+                                            <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                            <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="card item border-0">
+                                   
+    
+                                    <a href="item-details.html" class="item-add">
+                                        <div class="btn">
+                                            View
+                                        </div>
+    
+                                        <div class="text-center img-holder p-2">
+                                            <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                                width="" />
+                                        </div>
+    
+                                        <div class="item-text px-3 text-center pt-2 pb-3">
+    
+    
+                                            <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                            <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="card item border-0">
+    
+                                    <a href="item-details.html" class="item-add">
+                                        <div class="btn">
+                                            View
+                                        </div>
+                                        <div class="text-center img-holder p-2">
+                                            <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                                width="" />
+                                        </div>
+    
+                                        <div class="item-text px-3 text-center pt-2 pb-3">
+                                            <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                            <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
+                                        </div>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                  
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+{% block scripts %}
+
+
+<script type="text/javascript">
+
+
+</script>
+
+
+
+{% endblock %}

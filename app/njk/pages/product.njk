@@ -17,18 +17,35 @@
 
 {% block content %}
 <div class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Product</li>
-        </ol>
-    </nav>
+   
+    <div>
+        <div class="row mb-4">
+
+            <div class="col-lg-3 col-xl-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Product</li>
+                    </ol>
+                </nav>
+            
+
+            </div>
+            <div class="col-lg-9 col-xl-9">
+                <div class="h-100 d-flex align-items-center">
+                    <div class="search"> <input type="text" class="search-input" placeholder="Search..." name=""> <a href="#" class="search-icon"> <i class="fa fa-search"></i> </a> </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <div>
         <div class="row">
             <div class="col-lg-3 col-xl-3 d-none d-lg-block">
                 <div class="side-menu">
-                    <ul class="product">
+                    <ul class="product m-0">
 
                         {% import 'templates/links/product_side_nav.njk' as sidebar %}
                         {{ sidebar.active( 'product' ) }}
@@ -45,26 +62,25 @@
 
                     <div>
 
-
-                        <h4 class="title">Products</h4>
+                        <h5 class="product-title">Mens Fashion</h5>
                         <div class="card-group items ">
                             <div class="card item border-0">
                                
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
+                                   <div class="brand">
+                                        Dove
                                     </div>
 
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
 
 
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
                                     </div>
                                 </a>
@@ -73,19 +89,19 @@
                                
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
 
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
 
 
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
                                     </div>
                                 </a>
@@ -97,16 +113,16 @@
                             <div class="card item border-0">
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
                                     </div>
                                 </a>
@@ -116,16 +132,16 @@
                                
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
 
                                     </div>
@@ -135,16 +151,16 @@
                             <div class="card item border-0">
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
 
                                     </div>
@@ -155,16 +171,16 @@
                             <div class="card item border-0">
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
 
                                     </div>
@@ -174,16 +190,16 @@
                             <div class="card item border-0">
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
 
                                     </div>
@@ -193,16 +209,16 @@
                             <div class="card item border-0">
 
                                 <a href="item-details.html" class="item-add">
-                                    <div class="btn">
-                                        View
-                                    </div>
+                                   <div class="brand">
+                                    Dove
+                                </div>
                                     <div class="text-center img-holder p-2">
-                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1 my-3"
+                                        <img src="{{ baseUrl }}/app/dist/images/1.png" class="img-fluid py-1"
                                             width="" />
                                     </div>
 
                                     <div class="item-text px-3 text-center pt-2 pb-3">
-                                        <h6 class="m-0 p-0 text-dark"> Perfumed Body Mist</h6>
+                                        <h6 class="m-0 p-0"> Perfumed Body Mist</h6>
                                         <div class="text-dark font-weight-semi-bold">GHS 23.00</div>
 
                                     </div>

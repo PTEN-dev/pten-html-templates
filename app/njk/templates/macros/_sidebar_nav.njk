@@ -1,15 +1,16 @@
 {% macro active(activePage='') %}
 
-<li class="nav-item">
-    <a class="nav-link {%if activePage == 'home' %} active {% endif %}" href="dashboard.html">
-      <i class="ni ni-tv-2 text-primary"></i>
-      <span class="nav-link-text">Dashboard</span>
+
+  <li class="nav-item">
+    <a class="nav-link  {%if activePage == 'member' %} active {% endif %}" href="members.html">
+      <i class="ni ni-single-02 text-info"></i>
+      <span class="nav-link-text">Members</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link  {%if activePage == 'login' %} active {% endif %}" href="../login.html">
-      <i class="ni ni-key-25 text-info"></i>
-      <span class="nav-link-text">Login/Register</span>
+    <a class="nav-link  {%if activePage == 'product' %} active {% endif %}" href="products.html">
+      <i class="ni ni-tag text-info"></i>
+      <span class="nav-link-text">Products</span>
     </a>
   </li>
  

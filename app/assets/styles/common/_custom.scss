@@ -109,10 +109,11 @@ $bagdeConfig: 0,
 
 
 a {
-    color: #454ade;
+    color: #001534;
+    text-decoration: none;
 
     &:hover {
-        color: #454ade;
+        color: #001534;
     }
 }
 
@@ -120,6 +121,15 @@ a {
     padding: 2.75rem 1rem;
     margin-bottom: 0;
     background-color: #ffffff;
+
+    a {
+        color: #001534;
+        text-decoration: none;
+    
+        &:hover {
+            color: #001534 !important;
+        }
+    }
 }
 
 

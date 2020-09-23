@@ -7,6 +7,8 @@
 {% block stylesheet %}
 
 <link href="{{ baseUrl }}/app/dist/styles/dashboard.css" rel="stylesheet"> 
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+
 
 
 
@@ -135,66 +137,38 @@
         <div class="col-xl-12">
             <div class="card">
                 <div class="card-header border-0">
-                  <h4 class="product-title">Add Product</h4>
+                  <h4 class="product-title">Add Image</h4>
                 </div>
                 <div class="card-body">
                   <form>
-                    <div class="row">
-                      <div class="col-md-5 pr-md-1">
-                        <div class="form-group">
-                          <label>Product Name</label>
-                          <input type="text" class="form-control" placeholder="Name" value="">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 ">
+                        <div class="container animated bounce">
+                            <form id="form1" runat="server">
+                                <div class="alert"></div>
+                                <div id='img_container'><img id="preview" src="https://webdevtrick.com/wp-content/uploads/preview-img.jpg" alt="your image" title=''/></div> 
+                                <div class="mt-4"> 
+                                <div class="custom-file">
+                                <input type="file" id="inputGroupFile01" class="imgInp" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                              </div>
+                            </div>
+                            </form>
                         </div>
                       </div>
                      
-                      <div class="col-md-4 pl-md-1">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Branch</label>
-                          <input type="email" class="form-control" placeholder="Branch">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 pr-md-1">
-                        <div class="form-group">
-                          <label>Price</label>
-                          <input type="text" class="form-control" placeholder="Price" value="">
-                        </div>
-                      </div>
-                      <div class="col-md-6 pl-md-1">
-                        <div class="form-group">
-                          <label>Category</label>
-                          <input type="text" class="form-control" placeholder="Category" value="">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Description</label>
-                          <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your description" value="Mike"></textarea>
-  
-                        </div>
-                      </div>
+                    
                     </div>
                    
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Additional Info</label>
-                          <textarea rows="4" cols="80" class="form-control" placeholder="Here can be your Additional Info" value="Mike"></textarea>
-  
-                        </div>
-                      </div>
-                    </div>
+                  
                    
+                  
                   
                   </form>
                 </div>
                 <div class="card-footer d-flex justify-content-end">
-                    <button type="submit" class="btn btn-outline-dark">Save</button>
-                    <a href="add-product-image.html" type="submit" class="btn btn-primary">Save & Upload Image</a>
-                 
+  
+                  <button type="submit" class="btn btn-primary">Save</button>
                 </div>
               </div>
         </div>
@@ -224,6 +198,36 @@
 
 
 <script type="text/javascript">
+$("#inputGroupFile01").change(function(event) {  
+  RecurFadeIn();
+  readURL(this);    
+});
+$("#inputGroupFile01").on('click',function(event){
+  RecurFadeIn();
+});
+function readURL(input) {    
+  if (input.files && input.files[0]) {   
+    var reader = new FileReader();
+    var filename = $("#inputGroupFile01").val();
+    filename = filename.substring(filename.lastIndexOf('\\')+1);
+    reader.onload = function(e) {
+      $('#preview').attr('src', e.target.result);
+      $('#preview').hide();
+      $('#preview').fadeIn(500);      
+      $('.custom-file-label').text(filename);             
+    }
+    reader.readAsDataURL(input.files[0]);    
+  } 
+  $(".alert").removeClass("loading").hide();
+}
+function RecurFadeIn(){ 
+  console.log('ran');
+  FadeInAlert("Wait for it...");  
+}
+function FadeInAlert(text){
+  $(".alert").show();
+  $(".alert").text(text).addClass("loading");  
+}
 
 
 </script>

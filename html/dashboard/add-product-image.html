@@ -24,6 +24,8 @@
   
 
 <link href="../../app/dist/styles/dashboard.css" rel="stylesheet"> 
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+
 
 
 
@@ -57,7 +59,7 @@
 
 
   <li class="nav-item">
-    <a class="nav-link   active " href="members.html">
+    <a class="nav-link  " href="members.html">
       <i class="ni ni-single-02 text-info"></i>
       <span class="nav-link-text">Members</span>
     </a>
@@ -403,177 +405,44 @@
 <div class="container-fluid mt--6">
     <div class="row">
         <div class="col-xl-12">
-            <div class="card ">
-                <div class="card-header border-0 d-flex justify-content-between align-items-center">
-                  <h4 class="card-title"> All Members</h4>
-  
-                  <a href="add-member.html"  class="btn btn-success">Add</a>
+            <div class="card">
+                <div class="card-header border-0">
+                  <h4 class="product-title">Add Image</h4>
                 </div>
                 <div class="card-body">
-                    <div class="accordion" id="accordionExample">
-                        <div class="">
-                            <div class="card-header" id="headingOne">
-                                <div class="mb-0 d-flex justify-content-between">
-                                    <h4 class="text-default" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Kwame Mensah  <span class="text-muted small">| 0267 626632 | kamensgh@gmail.com</span>
-                                    </h4>
-
-                                    <div class="mr-5">
-                                        <a href="add-member.html" class="btn btn-primary px-2 py-1 btn-sm animation-on-hover">Edit</a>
-              
-                                       <button type="button" class="btn btn-danger px-2 py-1 btn-sm animation-on-hover" data-toggle="modal" data-target="#deleteModal">Delete</button>
-                                    </div>
-                                </div>
+                  <form>
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 ">
+                        <div class="container animated bounce">
+                            <form id="form1" runat="server">
+                                <div class="alert"></div>
+                                <div id='img_container'><img id="preview" src="https://webdevtrick.com/wp-content/uploads/preview-img.jpg" alt="your image" title=''/></div> 
+                                <div class="mt-4"> 
+                                <div class="custom-file">
+                                <input type="file" id="inputGroupFile01" class="imgInp" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                              </div>
                             </div>
-    
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
-                                <div class="card-body bg-gradient-secondary">
-                                    <div class="accordion" id="accordionExample1">
-                                        <div class="">
-                                            <div class="card-header" id="headingOne1">
-                                                <div class="mb-0 d-flex justify-content-between">
-                                                    <h4 class="text-default" type="button"
-                                                        data-toggle="collapse" data-target="#collapseOne1"
-                                                        aria-expanded="true" aria-controls="collapseOne">
-                                                        Sammy Joe  <span class="text-muted small">| 0267 626632 | kamensgh@gmail.com</span>
-                                                    </h4>
-
-                                                    <div class="mr-5">
-                                                        <a href="add-member.html" class="btn btn-primary px-2 py-1 btn-sm animation-on-hover">Edit</a>
-                              
-                                                       <button type="button" class="btn btn-danger px-2 py-1 btn-sm animation-on-hover" data-toggle="modal" data-target="#deleteModal">Delete</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-    
-                                            <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1"
-                                                data-parent="#accordionExample1">
-                                                <div class="card-body">
-    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="card-header" id="headingTwo1">
-                                                <div class="mb-0 d-flex justify-content-between">
-                                                    <h4 class=" text-default collapsed" type="button"
-                                                        data-toggle="collapse" data-target="#collapseTwo1"
-                                                        aria-expanded="false" aria-controls="collapseTwo1">
-                                                        Kojo Lamar  <span class="text-muted small">| 0267 626632 | kamensgh@gmail.com</span>
-                                                    </h4>
-
-                                                    <div class="mr-5">
-                                                        <a href="add-member.html" class="btn btn-primary px-2 py-1 btn-sm animation-on-hover">Edit</a>
-                              
-                                                       <button type="button" class="btn btn-danger px-2 py-1 btn-sm animation-on-hover" data-toggle="modal" data-target="#deleteModal">Delete</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo1"
-                                                data-parent="#accordionExample1">
-                                                <div class="card-body">
-    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <div class="card-header" id="headingThree1">
-                                                <div class="mb-0 d-flex justify-content-between">
-                                                    <h4 class=" collapsed text-default" type="button"
-                                                        data-toggle="collapse" data-target="#collapseThree1"
-                                                        aria-expanded="false" aria-controls="collapseThree1">
-                                                        Ella May  <span class="text-muted small">| 0267 626632 | kamensgh@gmail.com</span>
-                                                    </h4>
-
-                                                    <div class="mr-5">
-                                                        <a href="add-member.html" class="btn btn-primary px-2 py-1 btn-sm animation-on-hover">Edit</a>
-                              
-                                                       <button type="button" class="btn btn-danger px-2 py-1 btn-sm animation-on-hover" data-toggle="modal" data-target="#deleteModal">Delete</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1"
-                                                data-parent="#accordionExample1">
-                                                <div class="card-body">
-    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
-                        <div class="">
-                            <div class="card-header" id="headingTwo">
-                                <div class="mb-0 d-flex justify-content-between">
-                                    <h4 class=" text-default collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Kweku Ayeps  <span class="text-muted small">| 0267 626632 | kamensgh@gmail.com</span>
-                                    </h4>
-
-                                    <div class="mr-5">
-                                        <a href="add-member.html" class="btn btn-primary px-2 py-1 btn-sm animation-on-hover">Edit</a>
-              
-                                       <button type="button" class="btn btn-danger px-2 py-1 btn-sm animation-on-hover" data-toggle="modal" data-target="#deleteModal">Delete</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordionExample">
-                                <div class="card-body bg-gradient-secondary">
-    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="">
-                            <div class="card-header" id="headingThree">
-                                <div class="mb-0 d-flex justify-content-between">
-                                    <h4 class="text-default collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Ben Sark  <span class="text-muted small">| 0267 626632 | kamensgh@gmail.com</span>
-                                    </h4>
-
-                                    <div class="mr-5">
-                                        <a href="add-member.html" class="btn btn-primary px-2 py-1 btn-sm animation-on-hover">Edit</a>
-              
-                                       <button type="button" class="btn btn-danger px-2 py-1 btn-sm animation-on-hover" data-toggle="modal" data-target="#deleteModal">Delete</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordionExample">
-                                <div class="card-body bg-gradient-secondary">
-    
-                                </div>
-                            </div>
-                        </div>
+                      </div>
+                     
+                    
                     </div>
+                   
+                  
+                   
+                  
+                  
+                  </form>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+  
+                  <button type="submit" class="btn btn-primary">Save</button>
                 </div>
               </div>
         </div>
     </div>
-
-    <div class="modal" id="deleteModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Delete</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                <i class="tim-icons icon-simple-remove"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Are you sure you want to delete ......?</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Delete</button>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
     <!-- Footer -->
     <footer class="footer pt-0">
@@ -693,6 +562,36 @@
 
 
 <script type="text/javascript">
+$("#inputGroupFile01").change(function(event) {  
+  RecurFadeIn();
+  readURL(this);    
+});
+$("#inputGroupFile01").on('click',function(event){
+  RecurFadeIn();
+});
+function readURL(input) {    
+  if (input.files && input.files[0]) {   
+    var reader = new FileReader();
+    var filename = $("#inputGroupFile01").val();
+    filename = filename.substring(filename.lastIndexOf('\\')+1);
+    reader.onload = function(e) {
+      $('#preview').attr('src', e.target.result);
+      $('#preview').hide();
+      $('#preview').fadeIn(500);      
+      $('.custom-file-label').text(filename);             
+    }
+    reader.readAsDataURL(input.files[0]);    
+  } 
+  $(".alert").removeClass("loading").hide();
+}
+function RecurFadeIn(){ 
+  console.log('ran');
+  FadeInAlert("Wait for it...");  
+}
+function FadeInAlert(text){
+  $(".alert").show();
+  $(".alert").text(text).addClass("loading");  
+}
 
 
 </script>

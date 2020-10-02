@@ -15,9 +15,12 @@
         <a class="nav-link" href="login.html">Login/Register</a>
       </li>
       <li class="nav-item {%if activePage == 'cart' %} active {% endif %}">
-        <a class="nav-link" href="cart.html">
-          <span></span>
-          <i class="fas ml-1 fa-shopping-bag"></i></a>
+        <div class="d-flex">
+          <a class="nav-link pr-2" href="cart.html">
+            <span></span>
+            <i class="fas ml-1 fa-shopping-bag"></i>
+          </a>
+        </div>
       </li>
       
 {% endmacro %}

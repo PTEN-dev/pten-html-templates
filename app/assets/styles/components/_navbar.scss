@@ -50,4 +50,21 @@ nav.main {
     }
 
 
+    .navbar-collapse {
+
+        background: rgb(0, 21, 52);
+        z-index: 1;
+        padding: 20px;
+        position: unset;
+        width: 100%;
+        top: 86px;
+        left: 0px;
+
+        @media (max-width: 992px) {  
+            position: absolute;
+        } 
+
+    }
+
+
 }

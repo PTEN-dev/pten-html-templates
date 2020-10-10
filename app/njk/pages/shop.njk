@@ -1,7 +1,7 @@
 <!-- website.nunjucks -->
 {% set title='Shop' %}
 {% set topNav = 'product' %}
-{% extends "site_base.njk" %}
+{% extends "snap_base.njk" %}
 
 
 {% block stylesheet %}
@@ -79,7 +79,7 @@
 
         <div class="col-6 col-md-6 col-lg-3">
             <div class="position-relative mb-4 mb-md-0">
-                <a href="products.html" class="stretched-link">
+                <a href="product.html" class="stretched-link">
                     <img src="{{ baseUrl }}/app/dist/images/banners/fragrances-small.png" class="img-fluid img-hover-zoom" width="" />
                 </a>
             </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="col-6 col-md-6 col-lg-3">
             <div class="position-relative mb-4 mb-md-0">
-                <a href="products.html" class="stretched-link">
+                <a href="product.html" class="stretched-link">
                     <img src="{{ baseUrl }}/app/dist/images/banners/fashion-small.png" class="img-fluid img-hover-zoom" width="" />
                 </a>  
             </div>
@@ -100,7 +100,7 @@
 
         <div class="col-6 col-md-6 col-lg-3">
             <div class="position-relative mb-4 mb-md-0">
-                <a href="products.html" class="stretched-link">
+                <a href="product.html" class="stretched-link">
                     <img src="{{ baseUrl }}/app/dist/images/banners/exerciseandfitness-small.png" class="img-fluid img-hover-zoom" width="" />
                 </a>
             </div>
@@ -110,7 +110,7 @@
         <div class="col-6 col-md-6 col-lg-3">    
 
             <div class="position-relative mb-4 mb-md-0"> 
-                <a href="products.html" class="stretched-link">
+                <a href="product.html" class="stretched-link">
                     <img src="{{ baseUrl }}/app/dist/images/banners/phonesandaccessories-small.png" class="img-fluid img-hover-zoom" width="" />
                 </a>
             </div>
@@ -228,7 +228,7 @@
                 </div>
             </div>
             <div class="text-right mt-5  mb-5">
-                <a href="product.html" class=" d-inline-block small"> View More <i class="fa fa-arrow-right"></i></a>
+                <a href="product.html" class=" d-inline-block small"> View More <i class="fa text-warning fa-arrow-right"></i></a>
             </div>
 
         </div>
@@ -339,7 +339,7 @@
                 </div>
             </div>
             <div class="text-right mt-5  mb-5">
-                <a href="product.html" class=" d-inline-block small"> View More <i class="fa fa-arrow-right"></i></a>
+                <a href="product.html" class=" d-inline-block small"> View More <i class="fa text-warning fa-arrow-right"></i></a>
             </div>
         </div>
 
@@ -354,8 +354,13 @@
     </div>
 
 
-    <div class="brands mb-4">
-        <div class="" id="carousel-wrapper">
+   
+
+   
+</div>
+<div class="brands bg-white">
+    <div class="container">
+        <div class="bg-white" id="carousel-wrapper">
             <ul id="carousel">  
                 <li>
                     <a href="">
@@ -403,12 +408,10 @@
                     </a>
                 </li>
             </ul>
-
+    
         </div>
-
     </div>
 
-   
 </div>
 
 

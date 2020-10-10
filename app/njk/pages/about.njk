@@ -16,11 +16,20 @@
 
 
 {% block content %}
+<div class="inner-pages">
+
+
+
+
+
+</div>
+
+
 <div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Library</li>
+            <!-- <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li> -->
         </ol>
     </nav>
 
@@ -54,6 +63,154 @@
     </div>
 
 </div>
+<div class="brands mt-5">
+    <div class="container">
+        <div class="" id="carousel-wrapper">
+            <ul id="carousel">  
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+                    </a>
+                </li>
+            </ul>
+    
+        </div>
+    </div>
+
+</div>
+
+<div class="whatpeoplesay py-5">
+    <div class="text-center">
+        <h3 class="d-inline-block text-white font-weight-semi-bold title">What Poeple Say</h3>
+    </div>
+
+    <div class="">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-9">
+
+
+
+                <div class="row pt-4">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div data-aos="fade-up" data-aos-once="true"  data-aos-duration="400">
+                            <div>
+                                <div class="w-75 content rounded">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus facilis
+                                    bus
+                                    veritatis voluptates nam laudantium impedit laborum, eos voluptatem, itaque
+                                    molestias
+                                    ullam!
+                                </div>
+                                <div class="image">
+                                    <img src="../app/dist/images/avartar-01.jpg" alt="Chocolate Cake" width="100"
+                                        class="rounded-circle">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h5 class="mb-1 text-white font-weight-semi-bold">Ella Fisher</h5>
+                                    <p class="m-0 text-white-50">Customer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div data-aos="fade-up" data-aos-once="true"  data-aos-duration="600">
+                            <div>
+                                <div class="w-75 content rounded">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus facilis
+                                    bus
+                                    veritatis voluptates nam laudantium impedit laborum, eos voluptatem, itaque
+                                    molestias
+                                    ullam!
+                                </div>
+                                <div class="image">
+                                    <img src="../app/dist/images/avartar-02.jpg" alt="Chocolate Cake" width="100"
+                                        class="rounded-circle">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h5 class="mb-1 text-white font-weight-semi-bold">Ella Fisher</h5>
+                                <p class="m-0 text-white-50">Customer</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-4">
+                        <div data-aos="fade-up" data-aos-once="true"  data-aos-duration="800">
+                            <div>
+                                <div class="w-75 content rounded">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus facilis
+                                    bus
+                                    veritatis voluptates nam laudantium impedit laborum, eos voluptatem, itaque
+                                    molestias
+                                    ullam!
+                                </div>
+                                <div class="image">
+                                    <img src="../app/dist/images/avartar-03.jpg" alt="Chocolate Cake" width="100"
+                                        class="rounded-circle">
+                                </div>
+
+                            </div>
+                            <div>
+                                <h5 class="mb-1 text-white font-weight-semi-bold">Ella Fisher</h5>
+                                    <p class="m-0 text-white-50">Partner</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
 
 
 
@@ -67,6 +224,22 @@
 
 
 <script type="text/javascript">
+
+var carousel = document.getElementById('carousel');  
+    var first = carousel.children[0];
+    var ml = 0;
+
+    setInterval(function(){
+    ml -= 0.3;
+    if (-ml > first.offsetWidth){
+        first.style.marginLeft = null;
+        carousel.appendChild(first);
+        first = carousel.children[0];
+        ml = -0.2;
+    }
+    first.style.marginLeft = ml + 'px';
+    }, 10);
+
 
 
 </script>

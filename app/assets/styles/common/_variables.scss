@@ -7,3 +7,30 @@ $container-max-widths: (sm: 540px,
 $border-color: #dce2f0;
 
 $breadcrumb-divider: quote(">");
+
+
+
+
+@for $i from 1 through 600 {
+  .vh-height-#{$i} {
+    height: calc(100vh - #{$i}px);
+  }
+}
+
+
+
+@for $i from 1 through 100 {
+  .z-index-#{$i} {
+    z-index: #{$i};
+  }
+}
+
+
+$object: (contain:contain, cover: cover, fill: fill, scale-down: scale-down);
+
+@each $label,
+$value in $object {
+  .object-fit-#{$label} {
+    object-fit: $value;
+  }
+}

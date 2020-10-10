@@ -2,6 +2,7 @@
   "dependencies": {
     "main.js": {
       "files": [
+        "scripts/aos.js",  
         "scripts/main.js",
         "scripts/bootstrap.min.js"
       ],

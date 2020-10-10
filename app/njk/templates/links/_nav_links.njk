@@ -3,18 +3,19 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
        <li class="nav-item {%if activePage == 'about' %} active {% endif %}">
-        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link" href="about.html">RIFL Neo</a>
+      </li>
+      <li class="nav-item {%if activePage == 'opportunity' %} active {% endif %}">
+        <a class="nav-link" href="how.html">Opportunity</a>
       </li>
       <li class="nav-item {%if activePage == 'product' %} active {% endif %}">
         <a class="nav-link" href="shop.html" target="_blank">Shop</a>
       </li>
        <li class="nav-item {%if activePage == 'contact' %} active {% endif %}">
-        <a class="nav-link" href="contact.html">Contact Us</a>
+        <a class="nav-link pr-0" href="contact.html">Contact Us</a>
       </li>
-      <li class="nav-item {%if activePage == 'login' %} active {% endif %}">
-        <a class="nav-link" href="login.html">Login/Register</a>
-      </li>
-      <li class="nav-item {%if activePage == 'cart' %} active {% endif %}">
+     
+      <li class="nav-item d-none {%if activePage == 'cart' %} active {% endif %}">
         <div class="d-flex">
           <a class="nav-link pr-2" href="cart.html">
             <span></span>

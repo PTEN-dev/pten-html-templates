@@ -1,29 +1,128 @@
-.btn-primary {
-    color: #fff !important;
-    background-color: #001534 !important;
-    border-color: #001534 !important;
-    border-radius: 5px !important;
-    font-size: 13px !important;
-    font-weight: 600 !important;
-    padding: 11px 22px !important;
+// .btn-primary {
+//     color: #fff !important;
+//     background-color: #001534 !important;
+//     border-color: #001534 !important;
+//     border-radius: 5px !important;
+//     font-size: 13px !important;
+//     font-weight: 600 !important;
+//     padding: 11px 22px !important;
 
-    &:hover {
+//     &:hover {
 
-        color: #fff !important; 
-        background-color: #001534 !important;
-        border-color: #001534 !important;
-        border-radius: 5px;
+//         color: #fff !important; 
+//         background-color: #001534 !important;
+//         border-color: #001534 !important;
+//         border-radius: 5px;
 
-    }
-}
+//     }
+// }
 
 .btn {
-    border-radius: 5px !important;
-    font-size: 13px !important;
-    font-weight: 600 !important;
-    padding: 11px 22px !important; 
+    border-radius: 29px!important;
+    font-size: 13px!important;
+    font-weight: 600!important;
+    padding: 11px 34px!important;
 
     &:focus {
         box-shadow: none;
     }
 }
+
+.btn-outline-primary {
+    color: #29aae0;
+    background-color: transparent;
+    background-image: none;
+    border-color: #29aae0;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+.button-shadow {
+    box-shadow: 1px 6px 8px 0 rgba(75, 81, 91, 0.11);
+}
+
+
+
+
+.btn-primary {
+    background-image: linear-gradient(90deg,#01ffff 0,#1b5292 51%,#01fafc)}
+.btn-primary {
+   margin: 10px;
+   padding: 16px 22px !important;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;              
+//    box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: none;
+ }
+
+ .btn-primary:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+
+
+
+ .btn-warning {background-image: linear-gradient(to right, #FF5F6D 0%, #FFC371  51%, #FF5F6D  100%)}
+ .btn-warning {
+    margin: 10px;
+    padding: 16px 22px !important;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  } 
+
+  .btn-warning:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+  .snaptarget {
+
+    .btn-primary {
+        background-image: unset;
+      color: #fff !important;
+      background-color: #001534 !important;
+      border-color: #001534 !important;
+      border-radius: 5px !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      padding: 11px 22px !important;
+
+      &:hover {
+
+          color: #fff !important; 
+          background-color: #001534 !important;
+          border-color: #001534 !important;
+          border-radius: 5px;
+
+      }
+    }
+
+  
+
+
+
+
+
+  }
+ 

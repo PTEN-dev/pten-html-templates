@@ -1,0 +1,16 @@
+{% macro  active(activePage='home', baseUrl = '') %}
+       <li class="nav-item {%if activePage == 'home' %} active {% endif %}">
+        <a class="nav-link text-dark" href="index.html">Home</a>
+      </li>
+      
+    
+      <li class="nav-item {%if activePage == 'cart' %} active {% endif %}">
+        <div class="d-flex">
+          <a class="nav-link pr-2" href="cart.html">
+            <span></span>
+            <i class="fas text-dark ml-1 fa-shopping-bag"></i>
+          </a>
+        </div>
+      </li>
+      
+{% endmacro %}

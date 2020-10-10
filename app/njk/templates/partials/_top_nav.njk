@@ -1,18 +1,31 @@
-<nav class="navbar navbar-expand-lg main">
-  <div class="container">
-    <a class="navbar-brand" href="{{ baseUrl }}/html/login.html">
-      <img src="{{ baseUrl }}/app/dist/images/logo2.png" class="img-fluid" width="98" />
-    </a>
-    <div class="d-flex">
-      <div>
-        <div class="d-flex">
-          <a class="nav-link pr-2" href="cart.html">
-            <span></span>
-            <i class="fas ml-1 fa-shopping-bag"></i>
-          </a>
+<div class="top-nav">
+  <div class="w-100">
+    <div class="text-right">
+
+      <div class="d-flex justify-content-center justify-content-md-end"> 
+        <div>
+          <a href="login-new.html" class="text-white">Member Login</a>
         </div>
+        <div class="mx-4">
+          |
+        </div>
+        <div>
+          <a href="register-new.html" class="text-white">New Member? Sign Up</a>
+        </div>
+
       </div>
+
     </div>
+
+  </div>
+
+</div>
+
+<nav class="navbar navbar-expand-lg main">
+    <a class="navbar-brand" href="{{ baseUrl }}/html/login.html"  data-aos="fade-right" data-aos-once="true"  data-aos-duration="800">
+      <img src="{{ baseUrl }}/app/dist/images/logo2.png" class="img-fluid" />
+    </a>
+   
      
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,12 +42,11 @@
         </span>
       </button>
 
-  <div class="collapse navbar-collapse d-lg-flex justify-content-md-end" id="navbarTogglerDemo02">
-    <ul class="container justify-content-end navbar-nav">
+  <div class="collapse navbar-collapse d-lg-flex pr-0 justify-content-md-end" id="navbarTogglerDemo02">
+    <ul class="justify-content-end navbar-nav" data-aos="fade-left" data-aos-once="true"  data-aos-duration="800">
       {% import '../links/_nav_links.njk' as nav %}
       {{nav.active( activeNav, baseUrl )}}
     </ul>
-  </div>
   </div>
   
 </nav>

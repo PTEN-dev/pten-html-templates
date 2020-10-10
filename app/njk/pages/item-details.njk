@@ -1,7 +1,7 @@
 <!-- website.nunjucks -->
 {% set title='Products' %}
 {% set topNav = 'product' %}
-{% extends "site_base.njk" %}
+{% extends "snap_base.njk" %}
 
 
 {% block stylesheet %}
@@ -18,12 +18,13 @@
 {% block content %}
 <div class="container">
     <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb mt-1">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="product.html">Products</a></li>
             <li class="breadcrumb-item active" aria-current="page">Perfumed Body Mist</li>
         </ol>
     </nav>
+  
 
     <div>
         <div class="row">
@@ -58,13 +59,12 @@
                                 <h3 class="font-weight-semi-bold">GHS 23.00</h3>
 
 
-                                <div class="d-flex mt-5">
+                                <div class="d-flex mt-5 align-items-center">
                                     <div class="quantity mr-3">
                                         <input type="number" min="1" max="100" step="1" value="1">
                                       </div>
 
-                                      <a href="#" class="btn d-inline-block btn-primary mr-3"> Add to cart <i class="fas ml-1 fa-shopping-bag"></i></a>
-                                      <a href="#" class="btn d-inline-block btn-danger"> Buy Now</i></a>
+                                      <a href="#" class="btn btn-block btn-warning mr-3"> Add to cart <i class="fas ml-1 fa-shopping-bag"></i></a>
 
                                 </div>
                                 <div class="mt-5">

@@ -535,7 +535,7 @@ $grid-gutter-width: 10px;
   // font-weight: 600;
   // font-size: 22px;
   position: relative;
-  height: 57px;
+  height: 48px;
     margin-bottom: 37px;
 
   &.d-inline-block {
@@ -588,8 +588,8 @@ ol.how {
     counter-increment: a;
     display: -ms-flexbox;
     display: flex;
-    width: 50%;
-    font-size: 16px;
+    width: 100%;
+    font-size: 16px;   
     margin-bottom: 0.5rem;
 
     @media (max-width: 767.98px) {
@@ -598,7 +598,7 @@ ol.how {
 
     p {
       margin-right: 36px;
-      margin-bottom: 39px;
+      margin-bottom: 28px;
 
       @media (max-width: 767.98px) {
         margin-right: 0;

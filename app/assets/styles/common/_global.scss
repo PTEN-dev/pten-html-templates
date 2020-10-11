@@ -557,6 +557,16 @@ $grid-gutter-width: 10px;
     background: -webkit-gradient(linear, right bottom, left top, from(#39cbdc), color-stop(#3fc2dd), color-stop(#4aade0), color-stop(#588ce4), to(#588ce4));
     background: linear-gradient(to left top,#39cbdc,#3fc2dd,#4aade0,#588ce4,#588ce4);
   }
+
+
+  @include media-breakpoint-down(sm) {
+    font-size: 23px;
+
+    &::after {
+      content: unset !important;  
+    }
+
+  }
 }
 
 .page-link {
@@ -785,7 +795,7 @@ ol.how {
   height: 264px; 
   background-attachment: fixed;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
    display: none;
   }
 

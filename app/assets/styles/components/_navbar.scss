@@ -7,7 +7,7 @@ nav.main {
     z-index: 1;
     padding: 20px 43px;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         background: #001534;
         position: unset;
     }
@@ -17,7 +17,7 @@ nav.main {
         img {
             width: 206px;
 
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 width: 100px;
             }
         }
@@ -37,6 +37,10 @@ nav.main {
                     
                     &::before {
                         width: 60%;
+
+                        @include media-breakpoint-down(md) {
+                            width: 7%;
+                        }
                     }
                 }
 
@@ -76,6 +80,10 @@ nav.main {
 
                     &::before {
                         width: 60%;
+
+                        @include media-breakpoint-down(md) {
+                            width: 7%;
+                        }
                     }
                 }
 
@@ -107,7 +115,7 @@ nav.main {
         top: 135px;
         left: 0px;
 
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
             background: #001534;
         }
 

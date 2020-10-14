@@ -419,6 +419,28 @@ footer.web {
       border-radius: 3px;
     }
 
+    .label-sale {
+
+      background-color: #fdcc4a;
+      display: block;
+      clear: both;
+      text-align: center;
+      padding: 0;
+      border: none;
+      z-index: 1;
+      line-height: 35px;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      border-radius: 50%;
+      color: black;
+      font-size: 10px;
+      font-weight: bold;
+      top: 45px;
+      left: 16px;
+
+    }
+
     .item-add {
       .img-holder {
         // padding: 0.9rem;
@@ -978,6 +1000,23 @@ form {
     background: white;
     display: flex;
     justify-content: space-between;
+    padding: 12px 10px;
+    height: 104px;
+    // box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
+    .nav-link {
+      &::before {
+        content: unset !important;  
+      }
+    }
+  
+    @include media-breakpoint-down(md) {
+      height: 71px;
+      box-shadow: none;
+        .navbar-brand img {
+          width: 169px;
+        }  
+    }
   }
 
 
@@ -985,6 +1024,11 @@ form {
     min-width: 700px;  
     max-width: 700px;
     width: 100%;
+
+    @include media-breakpoint-down(md) {
+      min-width: 357px;
+      width: unset;
+    }  
 
 
     form {
@@ -1001,12 +1045,19 @@ form {
       .form-control {
         width: 100%;
         height: 38px;
-        padding: 10px 0;
+        padding: 10px 14px;
         border: none;
         line-height: 18px;
         text-transform: none;
         background: white;
         border-radius: 21px;
+        color: #000000;
+        font-size: 15px;
+
+        &:focus {
+          box-shadow: none;
+          color: #000000;
+        }
       }
 
       button {
@@ -1027,9 +1078,65 @@ form {
         border: none;
         background: #fcb53b;
         color: #333e48;
+
+        i {
+          font-size: 15px;
+          position: relative;
+          bottom: -3px;
+        }
       }
     }
   }
+
+  .side-menu ul.product>li ul li.active a {
+    color: #ce1b1b !important;
+  }
+
+  .alt-nav {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    // box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); 
+    // padding: 0 23px 16px;
+
+
+    .searchbox{
+      min-width: unset;
+      width: 100%;
+     }
+  }
+
+  .category-dropdown {
+    background-color: #ffba01;
+    color: rgb(0, 0, 0); 
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;   
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      background-color: white;  
+        
+    }
+
+
+    select {
+      background-color: transparent;
+      border: none;
+        -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      &:focus {
+        outline:none;
+        box-shadow: none;
+      }
+    }
+
+
+  }
+
+ 
 
 
 

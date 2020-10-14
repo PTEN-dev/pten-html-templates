@@ -1113,6 +1113,7 @@ form {
     padding: 10px 20px;   
     display: flex;
     align-items: center;
+    font-size: 14px; 
 
     @include media-breakpoint-down(md) {
       background-color: white;  

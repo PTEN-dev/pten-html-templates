@@ -47,7 +47,9 @@
 
 
 .btn-primary {
-    background-image: linear-gradient(90deg,#01ffff 0,#1b5292 51%,#01fafc)}
+    // background-image: linear-gradient(90deg,#0093b3,#46bbd4 51%,#0093b3);
+    background: #fe7b19;
+  }
 .btn-primary {
    margin: 10px;
    padding: 16px 22px !important;
@@ -63,8 +65,8 @@
  }
 
  .btn-primary:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
+  background: #fe7b19;
+  color: #fff;
    text-decoration: none;
  }
 

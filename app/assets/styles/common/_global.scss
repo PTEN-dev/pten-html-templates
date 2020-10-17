@@ -681,6 +681,17 @@ ol.how {
   align-items: center;
 }
 
+#carouselmain {
+
+  .carousel-inner {
+    .carousel-item {
+      height: calc(100vh - 254px);
+    }
+  }
+
+}
+
+
 .carousel-caption {
   right: unset;
   bottom: 34%;

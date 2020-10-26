@@ -8,7 +8,7 @@ nav.main {
     padding: 20px 43px;
 
     @include media-breakpoint-down(md) {
-        background: #0093b3;
+        background: #ffffff;
         position: unset;
     }
 
@@ -16,9 +16,11 @@ nav.main {
 
         img {
             width: 231px;
+            padding: 35px;
 
             @include media-breakpoint-down(md) {
                 width: 100px;
+                padding: 1px;
             }
         }
 
@@ -119,7 +121,7 @@ nav.main {
         left: 0px;
 
         @include media-breakpoint-down(md) {
-            background: #001534;
+            background: #ffffff;
         }
 
         @media (max-width: 992px) {  

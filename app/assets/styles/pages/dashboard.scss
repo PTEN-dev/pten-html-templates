@@ -288,14 +288,14 @@ a
 {
     text-decoration: none;
 
-    color: #5e72e4;
+    color: #fe7b19;
     background-color: transparent;
 }
 a:hover
 {
     text-decoration: none; 
 
-    color: #233dd2;
+    color: #cc691e;
 }
 
 a:not([href])
@@ -30478,6 +30478,11 @@ License - nucleoapp.com/license/
   .ni-ui-04::before {
       content: "\ea65";
   }
+
+
+  .text-info {
+    color: #0093b3!important;
+}
   
   
   /* all icon font classes list here */
